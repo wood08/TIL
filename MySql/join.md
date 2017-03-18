@@ -1,6 +1,6 @@
 join
 =============
-![Alt text](/img/sql_join.png)
+![sql_join](img/sql_join.png)
 
 inner join
 -----------
