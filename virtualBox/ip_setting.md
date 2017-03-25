@@ -24,5 +24,5 @@ Failed to attach the network LUN (VERR_INTNET_FLT_IF_NOT_FOUND).
 ![](img/ip_set_err_01.PNG)
 
 로컬 컴퓨터의 네트워크 연결->VirtualBox Host-Only Network->속성
-![](img/ip_set_err_02.PNG)
+![](img/ip_set_err_02.PNG)</br>
 [VirtualBox ~ Driver] 체크박스에 체크하고 확인
