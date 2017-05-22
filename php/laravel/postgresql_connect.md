@@ -2,16 +2,19 @@ postgresql 연동 방법
 ========================
 .env 파일 수정
 
+<pre><code>
 DB_CONNECTION=pgsql</br>
 DB_HOST=127.0.0.1	# DB 접속 IP</br>
 DB_PORT=5432		# DB 접속 포트</br>
 DB_DATABASE=[DB 이름]</br>
 DB_USERNAME=[user 이름]</br>
 DB_PASSWORD=[패스워드]</br>
+</code></pre>
 
 
 config/database.php 파일 수정
 
+<pre><code>
 'connections' => [</br>
 	'pgsql' => [		// 없으면 추가하기</br>
 		'driver' => 'pgsql',</br>
@@ -25,3 +28,4 @@ config/database.php 파일 수정
 		'schema' => 'public',</br>
 	],</br>
 ],</br>
+</code></pre>
