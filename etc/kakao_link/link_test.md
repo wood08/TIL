@@ -1,9 +1,12 @@
 카카오톡에 링크 보내기
 ==================
 1. 카카오 개발자 등록을 한다. (https://developers.kakao.com)
-2. 앱등록을 한다.
-3. 설정>일반 페이지로 이동
-4. 플랫폼>웹에 링크하고 싶은 사이트 도메인을 입력
+2. 앱등록을 한다.</br>
+![make_app](img/make_app.png)</br>
+3. 설정>일반 페이지로 이동</br>
+![setting](img/setting.png)</br>
+4. 플랫폼추가>웹에 링크하고 싶은 사이트 도메인을 입력</br>
+![in_url](img/in_url.png)</br>
 5. 테스트 페이지 만들기
 
 link_test.html
