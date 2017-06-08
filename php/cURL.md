@@ -1,7 +1,6 @@
 cURL
 ====================
-http://php.net/manual/kr/book.curl.php{: target="_blank" }</br>
-
+['http://php.net/manual/kr/book.curl.php'](http://php.net/manual/kr/book.curl.php){: target="_blank" }</br>
 
 	public function cURL_test(){
 
