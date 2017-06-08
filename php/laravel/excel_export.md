@@ -44,35 +44,33 @@
 				});
 
 				foreach($data as $key => $val) {
-					if($val->receiver_addr) {
-
 					$sheet->row(($key+2), [
 						$val->data1, $val->data2, $val->data3, $val->data4
 					]);
-
-					// dropdown 버튼 만들기 =================
-					$variantsSheet = $sheet->_parent->getSheet(0);		// 0번시트(시트인덱스 여기서는 sheet1을 가리킨다)를 가져옴
-
-					$sheet->_parent->addNamedRange(		// dropdown 할 데이터 범위를 지정한다.
-						new PHPExcel_NamedRange(
-							'countries', $variantsSheet, 'A1:A6'		// index 0 번시트의 A1~A6번 데이터 선택
-						)
-					);
-
-					$objValidation = $sheet->getCell('E1')->getDataValidation();	// E1번 칸에 dropdown 버튼 생성
-					$objValidation->setType(PHPExcel_Cell_DataValidation::TYPE_LIST);
-					$objValidation->setErrorStyle(PHPExcel_Cell_DataValidation::STYLE_INFORMATION);
-					$objValidation->setAllowBlank(false);
-					$objValidation->setShowInputMessage(true);
-					$objValidation->setShowErrorMessage(true);
-					$objValidation->setShowDropDown(true);
-					$objValidation->setErrorTitle('Input error');
-					$objValidation->setError('Value is not in list.');
-					$objValidation->setPromptTitle('Pick from list');
-					$objValidation->setPrompt('Please pick a value from the drop-down list.');
-					$objValidation->setFormula1('countries'); //note this!
-
 				}
+				
+				// dropdown 버튼 만들기 =================
+				$variantsSheet = $sheet->_parent->getSheet(0);		// 0번시트(시트인덱스. 여기서는 sheet1을 가리킨다)를 가져옴
+
+				$sheet->_parent->addNamedRange(		// dropdown 할 데이터 범위를 지정한다.
+					new PHPExcel_NamedRange(
+						'countries', $variantsSheet, 'A1:A6'		// index 0 번시트의 A1~A6번 데이터 선택
+					)
+				);
+
+				$objValidation = $sheet->getCell('E1')->getDataValidation();	// E1번 칸에 dropdown 버튼 생성
+				$objValidation->setType(PHPExcel_Cell_DataValidation::TYPE_LIST);
+				$objValidation->setErrorStyle(PHPExcel_Cell_DataValidation::STYLE_INFORMATION);
+				$objValidation->setAllowBlank(false);
+				$objValidation->setShowInputMessage(true);
+				$objValidation->setShowErrorMessage(true);
+				$objValidation->setShowDropDown(true);
+				$objValidation->setErrorTitle('Input error');
+				$objValidation->setError('Value is not in list.');
+				$objValidation->setPromptTitle('Pick from list');
+				$objValidation->setPrompt('Please pick a value from the drop-down list.');
+				$objValidation->setFormula1('countries'); //note this!
+					
 			});
 		})->export('xlsx');
 	}
