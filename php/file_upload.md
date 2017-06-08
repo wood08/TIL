@@ -17,7 +17,7 @@
 		</div>
 	</form>
 
-
+</br>
 
 	// upload.php
 	public function upload(Request $request){
