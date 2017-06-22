@@ -36,7 +36,7 @@ source code
 selction_sort.php
 	
 	<?php
-		$array = [2,3,4,1,5];
+		$array = [2,3,4,1,5,6];
 		
 		echo 'before array=';
 		for($i=0; $i<count($array); $i++){
@@ -44,17 +44,14 @@ selction_sort.php
 		}
 		echo "\n";
 		
-		$check = 1;
 		$tmp = 0;
 		$min_idx = 0;
 		for($i=0; $i<count($array); $i++){
-			if($check ==  0) break;
+
 			$min_idx = $i;
-			$check = 0;
 			for($j=$i+1; $j<count($array); $j++){
 				if($array[$j] < $array[$min_idx]){
 					$min_idx = $j;
-					$check = 1;
 				}
 			}
 			$tmp = $array[$min_idx];
