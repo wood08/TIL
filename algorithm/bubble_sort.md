@@ -64,7 +64,7 @@ bubble_sort.php
 
 		$check = 1;
 		for($i=0; $i<count($array); $i++){
-			if($check == 0) continue;
+			if($check == 0) break;
 			$check = 0;
 			for($j=0; $j<count($array)-1; $j++){
 				if($array[$j] > $array[$j+1]){
