@@ -58,7 +58,7 @@ bubble_sort.php
 
 		echo 'before array=';
 		for($i=0; $i<count($array); $i++){
-			echo $array[$i];
+			echo $array[$i].' ';
 		}
 		echo "\n";
 
@@ -78,6 +78,6 @@ bubble_sort.php
 
 		echo 'after array=';
 		for($i=0; $i<count($array); $i++){
-			echo $array[$i];
+			echo $array[$i].' ';
 		}
 	?>
