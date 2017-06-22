@@ -49,3 +49,34 @@ array = [4,3,1,2];</br>
 - array = [1,2,3,4];
 	- 각 요소를 바꿀 필요가 없음.
 
+source code
+--------------------------------
+bubble_sort.php
+	<?php
+		$array = [4,2,1,5,3];
+
+		echo 'before array=';
+		for($i=0; $i<count($array); $i++){
+			echo $array[$i];
+		}
+		echo "\n";
+
+		$check = 1;
+		for($i=0; $i<count($array); $i++){
+			if($check == 0) continue;
+			$check = 0;
+			for($j=0; $j<count($array)-1; $j++){
+				if($array[$j] > $array[$j+1]){
+					$tmp = $array[$j];
+					$array[$j] = $array[$j+1];
+					$array[$j+1] = $tmp;
+					$check = 1;
+				}
+			}
+		}
+
+		echo 'after array=';
+		for($i=0; $i<count($array); $i++){
+			echo $array[$i];
+		}
+	?>
