@@ -1,6 +1,0 @@
-sadfs
-<<<<<<< HEAD
-testtest
-=======
-test!!
->>>>>>> branch_test
