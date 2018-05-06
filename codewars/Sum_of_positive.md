@@ -14,26 +14,26 @@ link: [Sum of positive](https://www.codewars.com/kata/sum-of-positive)
 문제
 --
 
-You get an array of numbers, return the sum of all of the positives ones.
-Example [1,-4,7,12] => 1 + 7 + 12 = 20
-Note: array may be empty, in this case return 0.
+You get an array of numbers, return the sum of all of the positives ones.  
+Example [1,-4,7,12] => 1 + 7 + 12 = 20  
+Note: array may be empty, in this case return 0.  
 
-배열로 숫자를 받고 양수인 숫자를 모두 더한 값을 return.
-배열이 비어있는 경우에는 return 0.
+배열로 숫자를 받고 양수인 숫자를 모두 더한 값을 return.  
+배열이 비어있는 경우에는 return 0.  
 
-간단한 문젠데... 사실 어려운 문제는 영어때문에 문제가 뭔지 파악하기도 힘들다ㅠㅠ
-오늘은 늦었으니까 우선 이거 하나 하고, 영어공부 합시다..흡...
+간단한 문젠데... 사실 어려운 문제는 영어때문에 문제가 뭔지 파악하기도 힘들다ㅠㅠ  
+오늘은 늦었으니까 우선 이거 하나 하고, 영어공부 합시다..흡...  
 
 답변
 --
-function positive_sum($arr) {
-  // Your code here
-  $result = 0;
-  foreach($arr as $k=>$v){
-    if($v > 0) $result += $v;
+  function positive_sum($arr) {
+    // Your code here
+    $result = 0;
+    foreach($arr as $k=>$v){
+      if($v > 0) $result += $v;
+    }
+    return $result;
   }
-  return $result;
-}
 
 다른 사람들의 답변
 ------------
