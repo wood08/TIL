@@ -1,13 +1,13 @@
 Sum of positive
 ===============
-원래 paiza 에서 문제 조금씩 풀고 있었는데, 여기선 문제 유출하지 말라고 그래서...
-codewars는 상관 없는거 같으니 여기에 있는 문제 조금씩 풀어서 올리기로 함.
+원래 paiza 에서 문제 조금씩 풀고 있었는데, 여기선 문제 유출하지 말라고 그래서...  
+codewars는 상관 없는거 같으니 여기에 있는 문제 조금씩 풀어서 올리기로 함.  
 
-근데 영어다.
-....
-그래 뭐 영어공부도 같이 하지 뭐.
+근데 영어다.  
+....  
+그래 뭐 영어공부도 같이 하지 뭐.  
 
-어떻게 사용하는지 아직 잘 파악 안돼서 우선 젤 쉬워보이는 문제로;;
+어떻게 사용하는지 아직 잘 파악 안돼서 우선 젤 쉬워보이는 문제로;;  
 
 link: [Sum of positive](https://www.codewars.com/kata/sum-of-positive)
 
@@ -26,14 +26,14 @@ Note: array may be empty, in this case return 0.
 
 답변
 --
-  function positive_sum($arr) {
-    // Your code here
-    $result = 0;
-    foreach($arr as $k=>$v){
-      if($v > 0) $result += $v;
+    function positive_sum($arr) {
+      // Your code here
+      $result = 0;
+      foreach($arr as $k=>$v){
+        if($v > 0) $result += $v;
+      }
+      return $result;
     }
-    return $result;
-  }
 
 다른 사람들의 답변
 ------------
