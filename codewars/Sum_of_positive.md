@@ -9,8 +9,7 @@ codewars는 상관 없는거 같으니 여기에 있는 문제 조금씩 풀어�
 
 어떻게 사용하는지 아직 잘 파악 안돼서 우선 젤 쉬워보이는 문제로;;
 
-link: [Sum of positive][link] 
-[link]ttps://www.codewars.com/kata/sum-of-positive
+link: [Sum of positive](https://www.codewars.com/kata/sum-of-positive)
 
 문제
 --
