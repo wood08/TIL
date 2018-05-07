@@ -36,11 +36,12 @@ Link: [Piano Kata, Part 1](https://www.codewars.com/kata/piano-kata-part-1)
 1. 검은건반이 있는 위치(숫자) 배열을 만들고, 입력한 숫자의 나머지값에서 해당 배열에 일치하는 숫자가 있는지 확인하는 식으로 된 소스를 보니  
 내소스 왜케 구리니.  
 확실히 다른사람의 소스 보는게 많은 도움이 되는거 같다.
+건반 구조도 제대로 알게 됐음.  
+
+
     function blackOrWhiteKey($keyPressCount)
     {
       $key = ($keyPressCount - 1) % 88 % 12;
       $blackKeys = [1, 4, 6, 9, 11];
       return in_array($key, $blackKeys) ? 'black' : 'white';
     }
-
-건반 구조도 제대로 알게 됐음.
