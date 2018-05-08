@@ -38,7 +38,7 @@ Link: [Piano Kata, Part 1](https://www.codewars.com/kata/piano-kata-part-1)
 확실히 다른사람의 소스 보는게 많은 도움이 되는거 같다.
 건반 구조도 제대로 알게 됐음.
 
-</pre>
+<pre>
     function blackOrWhiteKey($keyPressCount)
     {
       $key = ($keyPressCount - 1) % 88 % 12;

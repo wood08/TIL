@@ -21,7 +21,7 @@ http://php.net/manual/kr/function.array-sum.php
 ------------------------
 1. 2의 나머지 값이 0인지 아닌지 꼭 확인 할 필요도 없음. 1이면 true, 0이면 false이니 다음과 같이 코드를 더 줄일 수 있다.
 
-</pre>
+<pre>
     function odd_or_even(array $a): string {
       return array_sum($a) % 2 ? 'odd' : 'even';
     }
