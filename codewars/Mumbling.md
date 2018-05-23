@@ -20,7 +20,7 @@ function accum(s) {
 	// your code
 	var arr = s.split("");
 	var result = "";
-	for(var i=0;i<arr.length;i++){
+	for(var i=0;i< arr.length ; i++){
 		result += (i==0?"":"-");
 		for(var j=0;j<=i;j++){
 			result += (j==0?arr[i].toUpperCase():arr[i].toLowerCase());
@@ -53,7 +53,7 @@ function accum(s) {
 	// your code
 	var arr = s.split("");
 	var result = "";
-	for(var i=0;i<arr.length;i++){
+	for(var i=0;i < arr.length ; i++){
 		arr[i] = arr[i].toUpperCase()+arr[i].toLowerCase().repeat(i);
 	}
 	return arr.join("-");
