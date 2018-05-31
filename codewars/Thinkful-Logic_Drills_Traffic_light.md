@@ -28,6 +28,7 @@ function updateLight(current) {
 }
 </pre>
 
+인덱스 비교할때 .length 를 쓰면 배열크기가 바껴도 괜찮을꺼 같다.
 
 다른 사람들의 답변
 ------------
