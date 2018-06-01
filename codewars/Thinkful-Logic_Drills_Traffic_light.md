@@ -1,7 +1,7 @@
 Thinkful - Logic Drills: Traffic light(javascript)
 ===============
 
-link: [Thinkful - Logic Drills: Traffic light](http://www.codewars.com/kata/thinkful-logic-drills-traffic-light?utm_source=newsletter)
+link: [Thinkful - Logic Drills: Traffic light](http://www.codewars.com/kata/thinkful-logic-drills-traffic-light)
 
 문제
 --
