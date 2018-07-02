@@ -19,13 +19,13 @@ function squareDigits(num){
   //may the code be with you
   num = num.toString().split("");
   var result = '';
-  for(var i=0;i<num.length;i++ ){
+  for(var i=0; i < num.length; i++ ){
     result += num[i]*num[i];
   }
   return result;
 }
 </pre>
-
+  
 2차
 <pre>
 function squareDigits(num){
