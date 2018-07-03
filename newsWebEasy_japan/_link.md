@@ -1,0 +1,1 @@
+Link: [ＮＥＷＳ ＷＥＢ ＥＡＳＹ](https://www3.nhk.or.jp/news/easy/)
