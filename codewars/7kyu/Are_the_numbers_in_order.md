@@ -23,7 +23,7 @@ Extra Challenge: If time, try to optimise and shorten your code as much as possi
 <pre>
 function inAscOrder(arr) {
   // Code your algorithm here :)
-  var result = arr.reduce( (a,b)=> a<b ? (a==-1?a:b) : -1 );
+  var result = arr.reduce( (a,b)=> a < b ? (a==-1?a:b) : -1 );
   return result==-1?false:true;
 }
 // Time: 628ms
