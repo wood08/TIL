@@ -50,7 +50,7 @@ const workNeeded = (p, f) => (p = f.reduce((s,[h,m])=> s - h*60- m,p)) <= 0  ?
 function workNeeded(project_minutes, freelancers)
 {
   var i;
-  for (i=0; i<freelancers.length; i+=1)
+  for (i=0; i < freelancers.length; i+=1)
     project_minutes -= (freelancers[i][0]*60 + freelancers[i][1]);
   return project_minutes <= 0 ? "Easy Money!" : ("I need to work " + Math.floor(project_minutes/60)
     + " hour(s) and " + String(project_minutes%60) + " minute(s)");
