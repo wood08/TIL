@@ -18,8 +18,8 @@ Based on: http://oj.leetcode.com/problems/two-sum/
 <pre>
 function twoSum(numbers, target) {
   // ...
-  for(var i=0; i<numbers.length; i++){
-    for(var j=i+1; j<numbers.length; j++){
+  for(var i=0; i < numbers.length; i++){
+    for(var j=i+1; j < numbers.length; j++){
       var result = numbers[i] + numbers[j];
       if ( target == result ) return [i, j];
     }
