@@ -1,0 +1,19 @@
+<html>
+
+<head>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="jquery-barcode.js"></script>
+<head>
+
+<body>
+<input type="button" onclick='$("#bcTarget").barcode("1234567890128", "ean13",{barWidth:2, barHeight:30});' value="ean13">
+<div id="bcTarget"></div>
+
+<input type="button" onclick='$("#bcTarget2").barcode("1234567", "int25",{barWidth:2, barHeight:30});' value="int25">
+<div id="bcTarget2"></div>
+
+<input type="button" onclick='$("#bcTarget3").barcode({code: "1234567", crc:false}, "int25",{barWidth:2, barHeight:30});' value="int25 without crc">
+<div id="bcTarget3"></div>
+<body>
+
+</html>
