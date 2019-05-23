@@ -107,4 +107,4 @@ Iterator::current — 현재의 요소를 반환
 Iterator::key — 현재의 요소의 키를 반환  
 Iterator::next — 다음 요소로 이동  
 Iterator::rewind — 이터레이터의 최초의 요소로 되돌아감  
-Iterator::valid — 現현재 위치가 유효한지 조사함
+Iterator::valid — 현재 위치가 유효한지 조사함
