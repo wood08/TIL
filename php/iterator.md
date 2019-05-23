@@ -100,3 +100,11 @@ PHP에는 많은 이터레이터가 이미 준비되어 있으며, 일상의 업
     
     string(16) "myIterator::next"
     string(17) "myIterator::valid"
+    
+목차
+---------------
+Iterator::current — 현재의 요소를 반환  
+Iterator::key — 현재의 요소의 키를 반환  
+Iterator::next — 다음 요소로 이동  
+Iterator::rewind — 이터레이터의 최초의 요소로 되돌아감  
+Iterator::valid — 現현재 위치가 유효한지 조사함
