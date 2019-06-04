@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Vue Nested Router</title>
+    </head>
+    <body>
+        <div id="app">
+            <button v-on:click="getData">프레임워크 목록 가져오기</button>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js">
+            // CDN을 이용해서 라이브러리를 로딩하는 방식과 NPM으로 라이브러리를 설치하는 방법(ES6기준)이 있음.
+            // 여기서 쓴 방법은 CDN
+            // NPM 설치 방법은 https://github.com/axios/axios#installing 참고
+        </script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script>
+            new Vue({
+                el: '#app',
+                methods: {
+                    getData: function(){
+                        axios.get('https://raw.githubusercontent.com/joshua1988/doit-vuejs/master/data/demo.json')
+                            .then(function(response){
+                                console.log(response);
+                        });
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
