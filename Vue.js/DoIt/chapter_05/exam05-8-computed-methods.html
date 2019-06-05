@@ -1,0 +1,30 @@
+<html>
+<body>
+<div id="app">
+    <p>{{ message }}</p>
+    <button v-on:click="reverseMsg">문자열 역순</button>
+    <p>{{ reverseMessage }}</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            message: "Hello Vue.js!"
+        },
+        methods: {  // 호출할때만 해당 로직 수행
+            reverseMsg: function(){
+                this.message = this.message.split('').reverse().join('');
+            }
+        },
+        computed: { // 1. 대상 데이터의 값이 변경되면 자동적으로 수행. 2. 연산 결과값을 미리 저장하고 있다가 필요할 때 불러옴(캐싱)
+            reverseMessage: function(){
+                return this.message.split('').reverse().join('');
+            }
+        }
+    });
+</script>
+</body>
+</html>
