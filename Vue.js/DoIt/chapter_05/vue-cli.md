@@ -8,7 +8,7 @@ vue-cli
 
 뷰 cli 로 프로젝트 생성하기
 
-    # vue init [프로젝트 이름]
+    # vue init webpack-simple
     
 관련 라이브러리 설치
     
