@@ -16,11 +16,9 @@
         },
         methods: {
             addTodo() {
-                if (this.newTodoItem !== '') {
-                    let input = this.newTodoItem && this.newTodoItem.trim();
-                    this.$emit('addTodo', input);
-                    this.clearInput();
-                }
+                let input = this.newTodoItem && this.newTodoItem.trim();
+                this.$emit('addTodo', input);
+                this.clearInput();
             },
             clearInput() {
                 this.newTodoItem = '';

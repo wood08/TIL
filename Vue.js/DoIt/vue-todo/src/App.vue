@@ -4,6 +4,13 @@
         <TodoInput v-on:addTodo="addTodo"></TodoInput>
         <TodoList v-bind:todoItems="todoItems" v-on:removeTodo="removeTodo"></TodoList>
         <TodoFooter v-on:clearAll="clearAll"></TodoFooter>
+        <Modal v-if="showModal" @close="showModal = false">
+            <h3 slot="header">경고</h3>
+            <span slot="footer" @click="showModal = false">
+                {{ modalMsg }}
+                <i class="closeModalBtn fas fa-times" aria-hidden="true"></i>
+            </span>
+        </Modal>
     </div>
 </template>
 
@@ -12,17 +19,30 @@
     import TodoInput from "./components/TodoInput";
     import TodoList from "./components/TodoList";
     import TodoFooter from "./components/TodoFooter";
+    import Modal from "./components/common/Modal";
 
     export default {
         data() {
             return {
-                todoItems: []
+                todoItems: [],
+                showModal: false,
+                modalMsg: '',
+                nullInputMsg: '할일을 입력 하세요.',
+                dupliKeyMsg: '이미 입력된 할일 입니다.',
             }
         },
         methods: {
             addTodo(input) {
-                localStorage.setItem(input, input);
-                this.todoItems.push(input);
+                if(localStorage.getItem(input)) {
+                    this.modalMsg = this.dupliKeyMsg;
+                    this.showModal = !this.showModal;
+                } else if(input=='') {
+                    this.modalMsg = this.nullInputMsg;
+                    this.showModal = !this.showModal;
+                } else {
+                    localStorage.setItem(input, input);
+                    this.todoItems.push(input);
+                }
             },
             removeTodo(todoItem, index) {
                 localStorage.removeItem(todoItem);
@@ -45,6 +65,7 @@
             'TodoInput': TodoInput,
             'TodoList': TodoList,
             'TodoFooter': TodoFooter,
+            'Modal': Modal,
         }
     }
 </script>
