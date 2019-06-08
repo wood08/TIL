@@ -2,7 +2,7 @@
     <div id="app">
         <TodoHeader></TodoHeader>
         <TodoInput v-on:addTodo="addTodo"></TodoInput>
-        <TodoList v-bind:todoItems="todoItems"></TodoList>
+        <TodoList v-bind:todoItems="todoItems" v-on:removeTodo="removeTodo"></TodoList>
         <TodoFooter v-on:clearAll="clearAll"></TodoFooter>
     </div>
 </template>
@@ -23,6 +23,11 @@
             addTodo(input) {
                 localStorage.setItem(input, input);
                 this.todoItems.push(input);
+            },
+            removeTodo(todoItem, index) {
+                console.log('삭제하낟', todoItem);
+                localStorage.removeItem(todoItem);
+                this.todoItems.splice(index, 1);
             },
             clearAll() {
                 localStorage.clear();
