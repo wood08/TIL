@@ -8,7 +8,7 @@
     export default {
         methods: {
             clearAll() {
-                alert('clearAll');
+                this.$emit('clearAll');
             }
         }
     }

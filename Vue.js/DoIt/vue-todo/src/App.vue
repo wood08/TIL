@@ -3,7 +3,7 @@
         <TodoHeader></TodoHeader>
         <TodoInput v-on:addTodo="addTodo"></TodoInput>
         <TodoList v-bind:todoItems="todoItems"></TodoList>
-        <TodoFooter></TodoFooter>
+        <TodoFooter v-on:clearAll="clearAll"></TodoFooter>
     </div>
 </template>
 
@@ -23,11 +23,17 @@
             addTodo(input) {
                 localStorage.setItem(input, input);
                 this.todoItems.push(input);
+            },
+            clearAll() {
+                localStorage.clear();
+                this.todoItems = [];
             }
         },
         created() {
             for (let i=0; i<localStorage.length; i++) {
-                this.todoItems.push(localStorage.key(i));
+                if(localStorage.key(i) !== 'loglevel:webpack-dev-server'){
+                    this.todoItems.push(localStorage.key(i));
+                }
             }
         },
         components: {
