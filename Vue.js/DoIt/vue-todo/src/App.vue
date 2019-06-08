@@ -25,7 +25,6 @@
                 this.todoItems.push(input);
             },
             removeTodo(todoItem, index) {
-                console.log('삭제하낟', todoItem);
                 localStorage.removeItem(todoItem);
                 this.todoItems.splice(index, 1);
             },
