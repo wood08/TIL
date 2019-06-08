@@ -16,9 +16,9 @@
         },
         methods: {
             addTodo() {
-                if ( this.newTodoItem !== '') {
+                if (this.newTodoItem !== '') {
                     let input = this.newTodoItem && this.newTodoItem.trim();
-                    localStorage.setItem(input, input);
+                    this.$emit('addTodo', input);
                     this.clearInput();
                 }
             },
