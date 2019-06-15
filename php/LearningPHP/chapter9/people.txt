@@ -1,0 +1,4 @@
+test1@email.com|사람1
+test2@email.com|사람2
+test3@email.com|사람3
+test4@email.com|사람4
